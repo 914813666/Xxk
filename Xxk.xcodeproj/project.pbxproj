@@ -13,6 +13,10 @@
 		0F7574191A9EF0F600D1427A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F7574181A9EF0F600D1427A /* Images.xcassets */; };
 		0F75741C1A9EF0F600D1427A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F75741A1A9EF0F600D1427A /* LaunchScreen.xib */; };
 		0F7574281A9EF0F600D1427A /* XxkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7574271A9EF0F600D1427A /* XxkTests.swift */; };
+		0F7574321A9EF12000D1427A /* XxkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7574311A9EF12000D1427A /* XxkView.swift */; };
+		0F7574341A9F0B2E00D1427A /* 4s_btn_call_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F7574331A9F0B2E00D1427A /* 4s_btn_call_normal@2x.png */; };
+		0F7574361A9F0B3600D1427A /* ask_card_games@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F7574351A9F0B3600D1427A /* ask_card_games@2x.png */; };
+		0F7574381A9F0B4100D1427A /* ask_card_health@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F7574371A9F0B4100D1427A /* ask_card_health@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,10 @@
 		0F7574211A9EF0F600D1427A /* XxkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XxkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F7574261A9EF0F600D1427A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F7574271A9EF0F600D1427A /* XxkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XxkTests.swift; sourceTree = "<group>"; };
+		0F7574311A9EF12000D1427A /* XxkView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XxkView.swift; sourceTree = "<group>"; };
+		0F7574331A9F0B2E00D1427A /* 4s_btn_call_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "4s_btn_call_normal@2x.png"; sourceTree = "<group>"; };
+		0F7574351A9F0B3600D1427A /* ask_card_games@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ask_card_games@2x.png"; sourceTree = "<group>"; };
+		0F7574371A9F0B4100D1427A /* ask_card_health@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ask_card_health@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,12 +85,16 @@
 		0F75740E1A9EF0F600D1427A /* Xxk */ = {
 			isa = PBXGroup;
 			children = (
+				0F7574351A9F0B3600D1427A /* ask_card_games@2x.png */,
+				0F7574371A9F0B4100D1427A /* ask_card_health@2x.png */,
+				0F7574331A9F0B2E00D1427A /* 4s_btn_call_normal@2x.png */,
 				0F7574111A9EF0F600D1427A /* AppDelegate.swift */,
 				0F7574131A9EF0F600D1427A /* ViewController.swift */,
 				0F7574151A9EF0F600D1427A /* Main.storyboard */,
 				0F7574181A9EF0F600D1427A /* Images.xcassets */,
 				0F75741A1A9EF0F600D1427A /* LaunchScreen.xib */,
 				0F75740F1A9EF0F600D1427A /* Supporting Files */,
+				0F7574311A9EF12000D1427A /* XxkView.swift */,
 			);
 			path = Xxk;
 			sourceTree = "<group>";
@@ -192,9 +204,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F7574381A9F0B4100D1427A /* ask_card_health@2x.png in Resources */,
 				0F7574171A9EF0F600D1427A /* Main.storyboard in Resources */,
 				0F75741C1A9EF0F600D1427A /* LaunchScreen.xib in Resources */,
 				0F7574191A9EF0F600D1427A /* Images.xcassets in Resources */,
+				0F7574361A9F0B3600D1427A /* ask_card_games@2x.png in Resources */,
+				0F7574341A9F0B2E00D1427A /* 4s_btn_call_normal@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,6 +227,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F7574321A9EF12000D1427A /* XxkView.swift in Sources */,
 				0F7574141A9EF0F600D1427A /* ViewController.swift in Sources */,
 				0F7574121A9EF0F600D1427A /* AppDelegate.swift in Sources */,
 			);
@@ -337,8 +353,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Xxk/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -347,8 +365,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Xxk/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
